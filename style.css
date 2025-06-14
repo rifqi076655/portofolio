@@ -461,30 +461,34 @@ span{
     color: var(--text-color);
 }
  /* responsive Design COde */
- @media (max-width:1285px){
-    html {
-    }
+ media (max-width: 1285px) {
+    /* Tambahkan properti di sini jika perlu */
 }
- @media (max-width:991px){
+
+/* --- Media Query max-width 991px --- */
+@media (max-width: 991px) {
     header {
         padding: 2rem 3%;
     }
     section {
         padding: 10rem 3% 2rem;
     }
-    .footer{
-        padding: 2rem 3% ;
+    .footer {
+        padding: 2rem 3%;
     }
- }
-@media (max-width:786px){
-    #menu-icon{
+}
+
+/* --- Media Query max-width 786px --- */
+@media (max-width: 786px) {
+    #menu-icon {
         display: block;
     }
-    .navbar{
+    .navbar {
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 255%;
+        width: 100%;
+        max-width: 300px;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -492,57 +496,57 @@ span{
         transition: all 0.3s ease;
         backdrop-filter: blur(10px);
     }
-    .navbar a{
+    .navbar a {
         display: block;
         padding: 17px;
         font-size: 22px;
     }
-    .navbar .active{
+    .navbar.active {
         right: 0;
     }
-    .home{
+    .home {
         flex-direction: column;
-
     }
-    .home-content h3{
+    .home-content {
+        order: 2;
+    }
+    .home-content h3 {
         font-size: 2.6rem;
     }
     .home-content h1 {
         font-size: 5rem;
     }
-    .home-content{
-        order: 2;
-    }
-    .home-img img{
+    .home-img img {
         width: 70vw;
         margin-top: 4rem;
-
     }
-    .about{
+    .about {
         flex-direction: column;
     }
-    .about-img img{
+    .about-img img {
         width: 70vw;
         margin-top: 4rem;
     }
-    .content form .input-box input{
+    .content form .input-box input {
         width: 100%;
-
     }
 }
-@media (max-width:671px){
-    .home-img img{
+
+/* --- Media Query max-width 671px --- */
+@media (max-width: 671px) {
+    .home-img img {
         width: 80vw;
         margin-top: 8rem;
-
     }
-    .about-img img{
+    .about-img img {
         width: 80vw;
-        margin-top:4rem;
+        margin-top: 4rem;
     }
 }
-@media (max-width:426px){
-    .heading{
+
+/* --- Media Query max-width 426px --- */
+@media (max-width: 426px) {
+    .heading {
         font-size: 5rem;
         text-align: center;
         margin: 2rem 0;
